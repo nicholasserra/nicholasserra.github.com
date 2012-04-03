@@ -1,0 +1,131 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Nicholas Serra - GitHub</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  .blacktop {
+      top:0;
+      left: 0;
+      height:38px;
+      margin-bottom: 0;
+      position: fixed;
+      right: 0;
+      z-index: 1030;
+      background-color: #2C2C2C;
+      background-image: -moz-linear-gradient(center top , #333333, #222222);
+      background-repeat: repeat-x;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  }
+  .thumbs {
+      list-style-type:none;
+      clear:both;
+      margin:0;
+  }
+  
+  .thumbs li {
+      float:left;
+      margin:2px;
+  }
+  
+  .thumbs:after {
+      content: "";
+      display: table;
+  }
+  .thumbs:after {
+      clear: both;
+  }
+  
+  .social_icons a:hover {
+      text-decoration:none;
+  }
+  </style>
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  
+</head>
+<body>
+  <div class="blacktop"></div>
+  <div class="container">
+      <header class="jumbotron masthead">
+          <h1>Hey, I'm Nick.</h1>
+          <p>Developer, Photographer, Videographer</p>
+          <p class="download-info">
+              <a class="btn btn-primary btn-large" href="https://github.com/nicholasserra">View my GitHub profile</a>
+          </p>
+          <p class="download-info social_icons">
+             <a target="_blank" rel="nofollow" href="https://www.facebook.com/nicks2319">
+                 <img title="Follow me on Facebook" alt="Follow me on Facebook" src="img/icons/facebook.png">
+             </a>
+             <a target="_blank" rel="nofollow" href="https://twitter.com/nicholasserra">
+                 <img title="Follow me on Twitter" alt="Follow me on Twitter" src="img/icons/twitter.png">
+             </a>
+             <a target="_blank" rel="nofollow" href="http://www.linkedin.com/pub/nick-serra/a/a85/6a5">
+                 <img title="Follow me on LinkedIn" alt="Follow me on LinkedIn" src="img/icons/linkedin.png">
+             </a>
+             <a target="_blank" rel="nofollow" href="http://www.flickr.com/photos/nickserra/">
+                 <img title="Follow me on Flickr" alt="Follow me on Flickr" src="img/icons/flickr.png">
+             </a>
+             <a target="_blank" rel="nofollow" href="http://www.youtube.com/nicholasserra">
+                 <img title="Follow me on YouTube" alt="Follow me on YouTube" src="img/icons/youtube.png">
+             </a>
+             <a target="_blank" rel="nofollow" href="http://vimeo.com/nicholasserra">
+                 <img title="Follow me on Vimeo" alt="Follow me on Vimeo" src="img/icons/vimeo.png">
+             </a>
+             <a target="_blank" rel="nofollow" href="http://tech.nickserra.com">
+                 <img title="Follow me on Wordpress" alt="Follow me on Wordpress" src="img/icons/wordpress.png">
+             </a>
+          </p>
+      </header>
+      <div class="row">
+          <div class="span4">
+              <div class="well" id="repos"></div>
+          </div>
+          <div class="span4">
+              <div class="well" id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+                  <h6 style="margin:3px 0 8px;">Photos</h6>
+              </div>
+          </div>
+          <div class="span4">
+              <div class="well" id="blogposts"></div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- modal-gallery is the modal dialog used for the image gallery -->
+  <div id="modal-gallery" class="modal modal-gallery hide fade">
+      <div class="modal-header">
+          <a class="close" data-dismiss="modal">&times;</a>
+          <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body"><div class="modal-image"></div></div>
+      <div class="modal-footer">
+          <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+          <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+          <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+      </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://blueimp.github.com/cdn/js/bootstrap.min.js"></script>
+  <script src="js/libs/load-image.min.js"></script>
+  <script src="js/libs/bootstrap-image-gallery.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    var _gaq=[['_setAccount','UA-30549714-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
