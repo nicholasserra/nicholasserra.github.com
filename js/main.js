@@ -21,7 +21,9 @@ $(document).ready(function(){
         success: function(data) {
             var items = [];
             $.each(data.data, function(item, val) {
-                items.push('<li><a href="'+val.url+'">'+val.name+'</a></li>');
+                if (!val.fork){
+                    items.push('<li><a href="'+val.url+'">'+val.name+'</a></li>');
+                }
             });
             $('<ul/>', {
               'class': 'nav nav-list',
