@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var flickr_json_url = 'http://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=fab8e8f200b71e58f52419b0d512df8d&user_id=14670946%40N04&per_page=12&page=1&format=json&nojsoncallback=1',
+    var flickr_json_url = 'https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=fab8e8f200b71e58f52419b0d512df8d&user_id=14670946%40N04&per_page=12&page=1&format=json&nojsoncallback=1',
         wordpress_json_url = 'http://tech.nickserra.com/api/get_recent_posts/?callback=?',
         github_json_url = 'https://api.github.com/users/nicholasserra/repos?callback=ns';
 
